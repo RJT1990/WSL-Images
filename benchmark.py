@@ -1,4 +1,3 @@
-from efficientnet_pytorch.model import EfficientNet
 from torchbench.image_classification import ImageNet
 import torchvision.transforms as transforms
 import PIL
