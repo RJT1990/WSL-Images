@@ -1,0 +1,4 @@
+torchbench
+torchvision
+Pillow
+scipy
