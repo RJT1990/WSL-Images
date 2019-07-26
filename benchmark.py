@@ -15,7 +15,7 @@ b0_input_transform = transforms.Compose([
 # Run Evaluation
 ImageNet.benchmark(
     model=torch.hub.load('facebookresearch/WSL-Images', 'resnext101_32x16d_wsl'),
-    paper_model_name='ResNeXt-101 32×48d',
+    paper_model_name='ResNeXt-101 32x48d',
     paper_arxiv_id='1805.00932',
     paper_pwc_id='exploring-the-limits-of-weakly-supervised',
     input_transform=b0_input_transform,
