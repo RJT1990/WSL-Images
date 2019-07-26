@@ -19,6 +19,6 @@ ImageNet.benchmark(
     paper_arxiv_id='1805.00932',
     paper_pwc_id='exploring-the-limits-of-weakly-supervised',
     input_transform=b0_input_transform,
-    batch_size=64,
+    batch_size=256,
     num_gpu=1
 )
