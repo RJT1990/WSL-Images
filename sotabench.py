@@ -22,3 +22,25 @@ ImageNet.benchmark(
     batch_size=64,
     num_gpu=1
 )
+
+# Run Evaluation
+ImageNet.benchmark(
+    model=torch.hub.load('facebookresearch/WSL-Images', 'resnext101_32x32d_wsl'),
+    paper_model_name='ResNeXt-101 32x32d',
+    paper_arxiv_id='1805.00932',
+    paper_pwc_id='exploring-the-limits-of-weakly-supervised',
+    input_transform=b0_input_transform,
+    batch_size=128,
+    num_gpu=1
+)
+
+# Run Evaluation
+ImageNet.benchmark(
+    model=torch.hub.load('facebookresearch/WSL-Images', 'resnext101_32x16d_wsl'),
+    paper_model_name='ResNeXt-101 32x16d',
+    paper_arxiv_id='1805.00932',
+    paper_pwc_id='exploring-the-limits-of-weakly-supervised',
+    input_transform=b0_input_transform,
+    batch_size=256,
+    num_gpu=1
+)
